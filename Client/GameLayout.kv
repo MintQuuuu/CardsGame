@@ -1,0 +1,36 @@
+<CustomButton@Button>:
+    font_size: 32
+
+<LinksGrid@GridLayout>:
+    rows: 1
+    spacing: '5dp'
+    size_hint_y: None
+    size_hint_x: None
+    height: self.minimum_height
+    width: self.minimum_width
+
+
+<GameLayout>:
+    id: game
+    BoxLayout:
+        orientation: 'vertical'
+        BoxLayout:
+            size_hint: [1, .6]
+            Label:
+                text: "Dupas"
+        BoxLayout:
+            size_hint: [1, .4]
+            ScrollView:
+                do_scroll_x: True
+                do_scroll_y: False
+                size_hint: (None, None)
+                size: (300, 250)
+                LinksGrid:
+                    id: links_grid
+
+<LinkButton>:
+    size_hint_y: None
+    size_hint_x: None
+    height: '250dp'
+    width: '220dp'
+

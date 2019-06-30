@@ -25,7 +25,6 @@ class LinkButton(Button):
 
 class CardsApp(App):
     def build(self):
-        Window.size = (300, 500)
         Builder.load_file('GameLayout.kv')
         return GameLayout()
 

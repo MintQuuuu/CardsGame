@@ -1,3 +1,6 @@
+.buildozer
+buildozer.spec
+bin
 .idea
 Pipfile
 Pipfile.lock
